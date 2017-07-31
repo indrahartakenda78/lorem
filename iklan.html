@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Iklanly</title>
+
+    <!-- Bootstrap -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="asset/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Style tambahan -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font-Awesome -->
+    <link href="asset/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- jquery -->
+    <script src="asset/js/jquery.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="asset/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+    <nav class="navbar detail" role="navigation" id="bg-navbar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fa fa-navicon" style="color:#333;"></i>
+                </button>
+                <a class="navbar-brand" role="Down" href="#header">
+                    <a href="index.html"><h2>iklanly</h2></a>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html #how">How it work</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="iklan.html">iklan</a></li>
+                    <li><a href="login.html" class="btn">Add Space</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="iklan">
+        <div class="container">
+            <div class="title">
+                <h2>CARI KEBUTUHAN ANDA</h2>
+            </div>
+            <div class="iklan-row">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Category</h4>
+                        <ul>
+                            <li><a href="">Pakaian</a></li>
+                            <li><a href="">Sepatu</a></li>
+                            <li><a href="">Peralatan Dapur</a></li>
+                            <li><a href="">Peralatan Bayi</a></li>
+                            <li><a href="">Komputer & Laptop</a></li>
+                            <li><a href="">Makanan & Minuman</a></li>
+                            <li><a href="">Tempat Kuliner</a></li>
+                            <li><a href="">Tempat Wisata</a></li>
+                            <li><a href="">Property</a></li>
+                            <li><a href="">Lowongan Kerja</a></li>
+                            <li><a href="">More</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                                <div class="col-md-4">
+                                    <div class="iklan-col">
+                                        <div class="iklan-img">
+                                            <a href="detail.php?id=<?php echo $values["id"]; ?>"><img src="img-iklan/<?php echo $values['picture']; ?>"></a>
+                                        </div>
+                                        <div class="iklan-content">
+                                            <div>
+                                                <a href="detail.php?id=<?php echo $values["id"]; ?>"><h4><?php echo $values['title']; ?></h4></a>
+                                                <span><?php echo $values['category']; ?></span>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumb">
+                            <div class="footer-logo footer-content">
+                                <a href=""><h1>iklanly</h1></a>
+                                <h2>Thank you for using iklanly</h2>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="thumb">
+                            <div class="footer-content">
+                                <h2>Explore</h2>
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Terms</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Service</a></li>
+                                    <li><a href="">Help & Support</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumb">
+                            <div class="footer-content">
+                                <h2>Connect With Us</h2>
+                                 <ul>
+                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2017 &copy All right reserved. <a href="">iklanly</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="btn-up">
+      <a role="Down" href="#bg-navbar" class="back"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+
+
+    <script>window.jQuery || document.write('<script src="asset/js/jquery.min.js"><\/script>')</script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="asset/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
